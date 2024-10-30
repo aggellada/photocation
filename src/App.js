@@ -249,12 +249,6 @@ function App() {
               addMorePhotos={addMorePhotos}
               openModal={openModal}
               isSearching={isSearching}
-              //
-              // currentInput={currentInput}
-              // handleSubmit={handleSubmit}
-              // handleDelete={handleDelete}
-              // handleDeleteInput={handleDeleteInput}
-              // searchLocation={searchLocation}
             />
           </div>
         )}

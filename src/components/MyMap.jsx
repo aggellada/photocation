@@ -23,12 +23,12 @@ const MyMap = forwardRef(function MyMap(
   const markerRefs = useRef({});
   const openPopupRef = useRef(null);
 
-  const closePopup = () => {
-    if (openPopupRef.current) {
-      openPopupRef.current.closePopup(); // Close the currently open popup
-      openPopupRef.current = null; // Reset the reference
-    }
-  };
+  // const closePopup = () => {
+  //   if (openPopupRef.current) {
+  //     openPopupRef.current.closePopup(); // Close the currently open popup
+  //     openPopupRef.current = null; // Reset the reference
+  //   }
+  // };
 
   const customIcon = new Icon({
     iconUrl: "https://cdn-icons-png.flaticon.com/128/2776/2776067.png",
@@ -62,7 +62,6 @@ const MyMap = forwardRef(function MyMap(
                       if (isSearching && popupIsOpen) {
                         setMarkerIsClicked(false);
                         setPopupIsOpen(false);
-                        // e.target.closePopup();
                         return;
                       }
 
